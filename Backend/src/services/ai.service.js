@@ -86,6 +86,7 @@ async function generatePdfFromHtml(htmlContent) {
         args: chromium.args,
     });
 
+    const page = await browser.newPage();
 
     // console.log(htmlContent);
 
