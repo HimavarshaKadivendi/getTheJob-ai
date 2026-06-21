@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadivendi Himavarsha - Resume</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.4;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+    }
+    .container {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 25px 30px;
+      box-sizing: border-box;
+    }
+    header {
+      border-bottom: 2px solid #1a365d;
+      padding-bottom: 12px;
+      margin-bottom: 15px;
+    }
+    .header-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    h1 {
+      font-size: 26px;
+      color: #1a365d;
+      margin: 0;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 700;
+    }
+    .subtitle {
+      font-size: 13px;
+      color: #4a5568;
+      font-weight: 600;
+      margin-top: 3px;
+    }
+    .contact-info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 12px;
+      color: #4a5568;
+      margin-top: 8px;
+    }
+    .contact-info a {
+      color: #2b6cb0;
+      text-decoration: none;
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-size: 14px;
+      color: #1a365d;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 4px;
+      margin-bottom: 8px;
+      font-weight: 700;
+    }
+    .summary-text {
+      font-size: 12.5px;
+      color: #2d3748;
+      text-align: justify;
+      margin: 0;
+    }
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .skills-row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      font-size: 12.5px;
+    }
+    .skills-category {
+      font-weight: 700;
+      color: #2d3748;
+    }
+    .skills-list {
+      color: #4a5568;
+    }
+    .experience-item, .project-item {
+      margin-bottom: 12px;
+    }
+    .experience-item:last-child, .project-item:last-child {
+      margin-bottom: 0;
+    }
+    .item-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+    .item-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #2d3748;
+    }
+    .item-subtitle {
+      font-size: 12px;
+      color: #4a5568;
+      font-style: italic;
+    }
+    .item-date {
+      font-size: 12px;
+      color: #718096;
+      font-weight: 500;
+    }
+    .item-bullets {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 12.5px;
+      color: #4a5568;
+    }
+    .item-bullets li {
+      margin-bottom: 3px;
+    }
+    .education-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 5px;
+    }
+    .education-table th, .education-table td {
+      padding: 6px 8px;
+      text-align: left;
+      font-size: 12px;
+      border: 1px solid #e2e8f0;
+    }
+    .education-table th {
+      background-color: #f7fafc;
+      color: #2d3748;
+      font-weight: 700;
+    }
+    .education-table td {
+      color: #4a5568;
+    }
+    .split-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .list-items {
+      margin: 0;
+      padding-left: 18px;
+      font-size: 12.5px;
+      color: #4a5568;
+    }
+    .list-items li {
+      margin-bottom: 3px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-top">
+        <div>
+          <h1>Kadivendi Himavarsha</h1>
+          <div class="subtitle">B.Tech Computer Science and Engineering &bull; SVNIT Surat</div>
+        </div>
+      </div>
+      <div class="contact-info">
+        <span>📍 Warangal Urban, Telangana, India - 506009</span>
+        <span>📞 +91-7675819146</span>
+        <span>✉️ <a href="mailto:kadivendihimavarsha@gmail.com">kadivendihimavarsha@gmail.com</a></span>
+        <span>🔗 <a href="https://github.com/himavarshakadivendi" target="_blank">GitHub</a></span>
+        <span>🔗 <a href="https://linkedin.com/in/kadivendihimavarsha" target="_blank">LinkedIn</a></span>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="section">
+      <div class="section-title">Professional Summary</div>
+      <p class="summary-text">
+        Highly motivated Computer Science undergraduate passionate about designing and building intelligent, scalable software architectures. Demonstrated experience developing applications powered by LLMs, implementing document intelligence systems, structured prompting, and semantic querying. Strong foundational knowledge in distributed systems, back-end development, and machine learning pipeline optimization. Proven capability to align production-ready AI tools with core engineering practices to solve complex workflows.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skills-row">
+          <span class="skills-category">AI & Large Language Models:</span>
+          <span class="skills-list">Google Gemini AI, LLM Prompt Engineering, RAG Architectures, Vector Data Handling</span>
+        </div>
+        <div class="skills-row">
+          <span class="skills-category">Languages & Back-End:</span>
+          <span class="skills-list">Python, JavaScript (Node.js, Express.js), FastAPI, C, C++, SQL (MySQL), HTML/CSS</span>
+        </div>
+        <div class="skills-row">
+          <span class="skills-category">Databases & Libraries:</span>
+          <span class="skills-list">MongoDB, Mongoose, Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn</span>
+        </div>
+        <div class="skills-row">
+          <span class="skills-category">DevOps & Tools:</span>
+          <span class="skills-list">Docker, Docker Compose, Git, Vercel, Render, Postman, JWT Auth, Puppeteer</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Key Projects -->
+    <section class="section">
+      <div class="section-title">Key Projects</div>
+      
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">AI-Powered Job Preparation Platform (MERN Stack & Gemini AI)</span>
+            <span class="item-subtitle">| Self Project</span>
+          </div>
+          <span class="item-date">Jun 2026 - Present</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Architecting a production-ready AI-driven platform integrated with <strong>Google Gemini AI</strong> for dynamic generation of targeted interview questions and resume tailoring based on custom system instructions.</li>
+          <li>Implementing <strong>document intelligence</strong> pipelines including smart PDF parsing, automated ATS score calculation, and targeted skill gap analysis.</li>
+          <li>Developed a fast generation layer utilizing <strong>Puppeteer</strong> for automated on-demand generation and export of structured PDF resumes, deployed securely on Vercel and Render.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">AI-Based Attendance Management Agent (LLM & Voice Controlled)</span>
+            <span class="item-subtitle">| Course Project</span>
+          </div>
+          <span class="item-date">Mar 2025 - Apr 2025</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Engineered an interactive conversational AI interface leveraging NLP and <strong>LLM-based natural language commands</strong> to interpret database state requests and operations.</li>
+          <li>Integrated real-time computer vision (face recognition) and custom voice processing backend with a physical ESP32 and OLED display node, enabling a completely password-less workflow.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Scalable Distributed Web Crawler & Search Engine</span>
+            <span class="item-subtitle">| Team Project</span>
+          </div>
+          <span class="item-date">Mar 2026 - Apr 2026</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Developed a distributed searching infrastructure in Python, Flask, and MongoDB to crawl and index web resources efficiently.</li>
+          <li>Designed robust <strong>inverted indexing modules</strong> and multi-keyword relevance ranking systems to prioritize precise search responses.</li>
+          <li>Leveraged <strong>Docker Compose</strong> to orchestrate isolated crawling workers, managing fault-tolerant messaging and preventing URL duplicates across queues.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <div class="item-header">
+          <div>
+            <span class="item-title">Financial Fraud Detection & Analytics Pipeline</span>
+            <span class="item-subtitle">| Self Project</span>
+          </div>
+          <span class="item-date">Mar 2026 - Apr 2026</span>
+        </div>
+        <ul class="item-bullets">
+          <li>Built a high-performance evaluation pipeline to detect fraudulent transactions across 284K+ highly imbalanced data entries.</li>
+          <li>Implemented pipeline normalization techniques (SMOTE, Isolation Forest, LOF) to balance classification targets, utilizing F1-Score, ROC-AUC, and precision-recall thresholds to optimize detection thresholds.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section">
+      <div class="section-title">Education</div>
+      <table class="education-table">
+        <thead>
+          <tr>
+            <th>Degree/Certificate</th>
+            <th>Institute/Board</th>
+            <th>CGPA / Percentage</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>B.Tech. Computer Science & Engineering</strong></td>
+            <td>Sardar Vallabhbhai National Institute of Technology, Surat</td>
+            <td>8.11 CGPA (Current)</td>
+            <td>2023 - Present</td>
+          </tr>
+          <tr>
+            <td><strong>Intermediate (Class XII)</strong></td>
+            <td>Telangana State Board of Intermediate Education, Hyderabad</td>
+            <td>98.6%</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td><strong>Secondary School (Class X)</strong></td>
+            <td>Board of Secondary Education, Telangana</td>
+            <td>10 CGPA</td>
+            <td>2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Achievements and Responsibilities -->
+    <div class="split-section">
+      <section class="section">
+        <div class="section-title">Achievements</div>
+        <ul class="list-items">
+          <li><strong>JEE Advanced:</strong> Secured All India Rank 17584 (OBC Category Rank 4429)</li>
+          <li><strong>JEE Main:</strong> Secured All India Rank 21373 (OBC Category Rank 5318)</li>
+          <li><strong>BITSAT Exam:</strong> Achieved score of 263 / 390</li>
+          <li><strong>TS EAMCET Exam:</strong> Secured State Rank of 1504</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-title">Positions of Responsibility</div>
+        <ul class="list-items">
+          <li><strong>Co-coordinator</strong>, Web Development Committee, Academic Affairs Council, NIT Surat (Jan 2024 - Present)</li>
+          <li><strong>Member</strong>, NEXUS Club, NIT Surat (Jan 2024 - Present)</li>
+          <li>Actively involved in developing and maintaining internal academic web platforms.</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
